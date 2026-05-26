@@ -1,12 +1,17 @@
 //  const welcome = {
 //   greet : "Hello",
 //   title : "React"
+
+import Header from "./components/Header";
+
 //  }
 function getTitle(title){
   return title;
 }
+
 let myArr = [1,2,3,4,5,6,7,8,9,10];
- function App(){
+
+ function App(){ 
   return (
     <>
       <h1>Hello {getTitle("React")}</h1>
@@ -20,6 +25,8 @@ let myArr = [1,2,3,4,5,6,7,8,9,10];
           return <li key={data}>{data}</li>
         })}
       </ul>
+
+      <Header/>
     </>
   );
 }
