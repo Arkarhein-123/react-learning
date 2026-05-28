@@ -6,9 +6,9 @@
     private double salary;
 */
 export interface employeeResponse {
-    id : String;
-    firstName : String;
-    lastName : String;
-    email : String;
+    id : string;
+    firstName : string;
+    lastName : string;
+    email : string;
     salary : number;
 }

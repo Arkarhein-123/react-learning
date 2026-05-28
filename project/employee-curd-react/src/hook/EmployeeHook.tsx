@@ -12,5 +12,5 @@ export default function useEmployee() {
   }, []);
 
   // Return the state directly, not JSX
-  return { employees };
+  return { employees, setEmployees };
 }

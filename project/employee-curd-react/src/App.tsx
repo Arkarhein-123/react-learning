@@ -12,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-employee" element={<EmployeeForm />} />
+          <Route path="/employee-form/:id" element={<EmployeeForm />} />
         </Routes>
         <Footer />
       </BrowserRouter>
