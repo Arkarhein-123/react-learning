@@ -1,5 +1,6 @@
 import LoginComponent from "./auth/LoginComponent";
 import { isLoggedIn } from "./auth/LoginService";
+import RegisterComponent from "./auth/RegisterComponent";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
@@ -32,6 +33,7 @@ export default function App() {
             }
           />
           <Route path="/login" element={<LoginComponent />} />
+          <Route path="/register" element={<RegisterComponent />} />
         </Routes>
       </BrowserRouter>
     </div>

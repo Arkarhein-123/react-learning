@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-md navbar-dark bg-success">
+      <nav className="navbar navbar-expand-md navbar-dark bg-primary">
         <div className="container-fluid px-4">
           <Link to="/" className="navbar-brand fw-bold">
             Todo
