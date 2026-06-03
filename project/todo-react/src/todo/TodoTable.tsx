@@ -79,7 +79,7 @@ export default function TodoTable({ todos, onTodoUpdate }: TodoTableProps) {
                 </td>
                 <td>
                   <span
-                    className={`badge ${todo.isCompleted ? "bg-success" : "bg-warning text-dark "} text-uppercase fw-bold px-3 py-2`}
+                    className={`badge ${todo.isCompleted ? "bg-success" : "bg-warning text-dark "} text-uppercase fw-bold px-3 py-3`}
                   >
                     {todo.isCompleted ? "Completed" : "Uncompleted"}
                   </span>
