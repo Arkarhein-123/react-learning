@@ -93,6 +93,13 @@ export default function TopNavComponent({
           >
             ℹ️ Meals
           </button>
+
+          <button
+            onClick={() => onScrollTo("category-section")}
+            className="w-full text-left text-slate-400 hover:bg-slate-900 hover:text-white rounded-xl px-4 py-3 text-sm font-semibold transition-all whitespace-nowrap cursor-pointer"
+          >
+            ℹ️ Categories
+          </button>
         </div>
       </div>
 

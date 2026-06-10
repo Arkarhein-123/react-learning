@@ -4,6 +4,8 @@ import FeatureComponent from "./FeatureComponent";
 import DeliveryComponent from "./DeliveryComponent";
 import TopPickComponent from "./TopPickComponent.tsx";
 import MealComponent from "./MealComponent.tsx";
+import CategoryComponent from "./CategoryComponent.tsx";
+import FooterComponent from "./FooterComponent.tsx";
 
 export default function Home() {
   const [sideNav, setSideNav] = useState(true);
@@ -61,6 +63,16 @@ export default function Home() {
         {/* ─── 4. ABOUT US SECTION ─── */}
         <section id="about-section" className="scroll-mt-24 pb-12 w-full">
           <MealComponent />
+        </section>
+
+        {/* ─── 4. Category SECTION ─── */}
+        <section id="category-section" className="scroll-mt-24 pb-12 w-full">
+          <CategoryComponent />
+        </section>
+
+        {/* ─── 4. Category SECTION ─── */}
+        <section id="footer-section" className="scroll-mt-24 pb-12 w-full">
+          <FooterComponent />
         </section>
       </main>
     </div>

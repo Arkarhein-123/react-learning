@@ -199,6 +199,7 @@ export const mealData = [
         price: "$400",
     },
 ];
+
 export const categories = [
     {
         id: 1,

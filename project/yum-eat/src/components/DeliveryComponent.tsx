@@ -22,7 +22,7 @@ export default function DeliveryComponent() {
             <p className="text-[#00df9a] font-bold uppercase tracking-wider text-sm">
               Get the App
             </p>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold py-2 text-slate-800 leading-tight">
+            <h1 className="text-4xl sm:text-3xl md:text-4xl font-extrabold py-2 text-slate-800 leading-tight">
               Limitless Convenient On-Demand
             </h1>
             <p className="text-slate-500 text-justify text-sm sm:text-base leading-relaxed mt-2">

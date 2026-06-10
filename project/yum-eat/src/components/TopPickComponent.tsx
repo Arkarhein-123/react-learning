@@ -5,7 +5,7 @@ import { topPicks } from "../data/data";
 export default function TopPickComponent() {
   return (
     <div className="w-full max-w-7xl mx-auto py-8">
-      <h1 className="text-black font-extrabold text-3xl text-center py-4 uppercase">
+      <h1 className="text-black font-extrabold text-4xl text-center py-4 uppercase">
         Top Picks
       </h1>
 
