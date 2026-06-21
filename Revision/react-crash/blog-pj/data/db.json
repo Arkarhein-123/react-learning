@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My First Blog Post",
+      "datetime": "June 01, 2026 11:00 AM",
+      "body": "React Router v6/v7 is incredibly powerful once you get used to the data APIs!"
+    },
+    {
+      "id": "2",
+      "title": "Learning Tailwind CSS",
+      "datetime": "June 15, 2026 04:30 PM",
+      "body": "Tailwind makes styling fast. Utility classes save so much time writing raw CSS files."
+    },
+    {
+      "id": "3",
+      "title": "Mastering JavaScript Arrays",
+      "datetime": "June 16, 2026 09:15 AM",
+      "body": "Understanding array methods like map, filter, and reduce is essential for writing clean, declarative JavaScript code. They eliminate the need for complex, nested for-loops."
+    },
+    {
+      "id": "4",
+      "title": "React Performance Tips",
+      "datetime": "June 17, 2026 02:00 PM",
+      "body": "Keep your components small and lightweight. Use techniques like dynamic code-splitting and memoization only when necessary to optimize render speeds."
+    },
+    {
+      "id": "5",
+      "title": "Git Branching Strategies",
+      "datetime": "June 18, 2026 10:00 AM",
+      "body": "A solid Git workflow keeps code deployment clean. Learn how feature branching and pull requests protect production branches from unexpected breaking bugs."
+    },
+    {
+      "id": "im2eDcvfIcg",
+      "title": "How to survive as a software dev in ai era",
+      "datetime": "6/18/2026, 2:36:50 PM",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nostrum dicta ab placeat eos, fugiat eum perferendis excepturi eaque aliquid fuga accusamus impedit illo facere, alias exercitationem suscipit cum assumenda?"
+    },
+    {
+      "id": "MAD9J9fbFcA",
+      "title": "How to survive as a devops n ai era",
+      "datetime": "6/18/2026, 2:38:52 PM",
+      "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A nostrum dicta ab placeat eos, fugiat eum perferendis excepturi eaque aliquid fuga accusamus impedit illo facere, alias exercitationem suscipit cum assumenda?"
+    },
+    {
+      "title": "sfdasdf",
+      "body": "assdfasdfdsafasdfa",
+      "datetime": "2026-06-21",
+      "id": "fRrbFQYA58U"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

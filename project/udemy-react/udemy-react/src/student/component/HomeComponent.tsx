@@ -32,7 +32,7 @@ export default function HomeComponent() {
   // 3. Main Render Grid (Cleaned up props)
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-8">Explore Courses</h1>
+      <h1 className="text-3xl font-bold text-black mb-8">Explore Courses</h1>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {courses?.map((course: Course) => (
@@ -95,7 +95,7 @@ function CourseCard({ course }: { course: Course }) {
           {/* Styled Enroll Button */}
           <button
             onClick={() => addItem(course)}
-            className="px-3 py-1.5 text-xs font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors shadow-sm"
+            className="px-4 py-1.5 text-sm  font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors shadow-sm"
           >
             Enroll
           </button>

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { isLoggedIn, logout } from "../auth/service/AuthService";
+import { isLoggedIn, isStudent, logout } from "../auth/service/AuthService";
 import useCart from "../cart/useCart";
 
 export default function HeaderComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const beLoggedIn = isLoggedIn();
+  const beStudent = isStudent();
   const navigator = useNavigate();
   const { items } = useCart();
   const logoutHandler = () => {
@@ -68,8 +69,20 @@ export default function HeaderComponent() {
               Teach on Udemy
             </Link>
 
+            {beStudent && (
+              <Link
+                to="/enrolled-courses"
+                className="text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors"
+              >
+                Enrolled Courses
+              </Link>
+            )}
+
             {/* Cart Icon */}
-            <button className="text-gray-700 hover:text-indigo-600 relative p-2 transition-colors">
+            <Link
+              to="/cart"
+              className="text-gray-700 hover:text-indigo-600 relative p-2 transition-colors"
+            >
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -86,7 +99,7 @@ export default function HeaderComponent() {
               <span className="absolute top-0 right-0 inline-flex items-center justify-center px-1.5 py-0.5 text-xs font-bold leading-none text-white bg-indigo-600 rounded-full">
                 {items.length}
               </span>
-            </button>
+            </Link>
 
             {/* Auth Buttons */}
             {!beLoggedIn && (

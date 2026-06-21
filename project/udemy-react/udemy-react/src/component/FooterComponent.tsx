@@ -1,11 +1,7 @@
-
-
-
-
 export default function FooterComponent() {
   return (
-    <div>
+    <div style={{ backgroundColor: "light" }}>
       <h1>Footer Component</h1>
     </div>
-  )
+  );
 }

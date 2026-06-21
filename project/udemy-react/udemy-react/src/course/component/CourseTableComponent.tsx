@@ -1,5 +1,6 @@
 import { useGetCourses } from "../query/CourseHookQuery.tsx";
 import type { Course } from "../data/Course.ts";
+import { Link } from "react-router-dom";
 
 export default function CourseTableComponent() {
   const { data: courses, isError, isLoading } = useGetCourses();
@@ -59,7 +60,7 @@ export default function CourseTableComponent() {
       </div>
 
       {/* Table Card Wrapper */}
-      <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+      <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden px-3">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -150,9 +151,12 @@ export default function CourseTableComponent() {
 
                     {/* View/Edit Action */}
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                      <button className="text-indigo-600 hover:text-indigo-900 font-semibold px-3 py-1.5 rounded-md hover:bg-indigo-50 transition-colors">
-                        Manage
-                      </button>
+                      <Link
+                        to={`/teacher/create-lesson/${course.courseId}`}
+                        className="text-indigo-600 hover:text-indigo-900 font-semibold px-3 py-1.5 rounded-md hover:bg-indigo-50 transition-colors"
+                      >
+                        Add Lessons
+                      </Link>
                     </td>
                   </tr>
                 ))
